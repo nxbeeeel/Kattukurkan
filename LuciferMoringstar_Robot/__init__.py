@@ -29,10 +29,10 @@ Bot Owner Only
 
 ABOUT = """
 ➥ Name :  Kattukurkan auto filter bot v3
+
+➥ Creator : @crypto_space_admin
    
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
-
-➥ Tutorial : [Click Me](https://youtu.be/5hnYOKBzyi8)
 """
