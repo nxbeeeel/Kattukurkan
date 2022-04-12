@@ -121,13 +121,13 @@ async def group(client, message):
             botusername=await client.get_me()
             nyva=botusername.username
             BOT["username"]=nyva
-        files = await get_filter_results(query=search)
-        if files:
-            for file in files:
-                file_id = file.file_id
-                filename = f"[{get_size(file.file_size)}] {file.file_name}"
+        links = await get_filter_results(query=search)
+        if links:
+            for link in links:
+                link_id = link.link_id
+                linkname = f"[{get_size(link.link_size)}] {link.link_name}"
                 btn.append(
-                    [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
+                    [InlineKeyboardButton(text=f"{linkname}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{link_id}")]
                 )
         else:
             return
